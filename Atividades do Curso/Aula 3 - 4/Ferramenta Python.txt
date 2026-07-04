@@ -1,0 +1,3 @@
+A ferramenta Auto "py to exe" consegue incorporar o código e cria uma espécime de
+visualização do seu próprio código com uma interface gráfica.
+Auto Py to exe: https://github.com/brentvollebregt/auto-py-to-exe
