@@ -1,0 +1,76 @@
+# Bibliotecas
+import streamlit as st
+import pandas as pd
+
+# Configuração da página
+
+st.set_page_config(page_title="Visualizador de Planilhas", layout="centered")
+
+st.title("Visualizador de Planilhas")
+
+st.write(
+
+    "Este painel compara os dois principais componentes de exibição de dados do Streamlit."
+
+)
+
+# Criando o DataFrame de exemplo
+
+data = {
+
+    "Produto": ["Notebook Pro", "Smartphone X", "Teclado Mecânico", "Monitor 4K", "Mouse Sem Fio"],
+
+    "Categoria": ["Eletrônicos", "Eletrônicos", "Acessórios", "Monitores", "Acessórios"],
+
+    "Preço (R$)": [5499.00, 2999.90, 450.00, 2100.00, 180.50],
+
+    "Estoque": [15, 23, 42, 8, 50],
+
+    "Disponível": [True, True, True, False, True]
+}
+
+df = pd.DataFrame(data)
+
+# Exibição Interativa (st.dataframe)
+
+st.header("Tabela Interativa (`st.dataframe`)")
+
+st.markdown(
+
+    """
+    * **Recursos:** Permite ordenar clicando nas colunas, redimensionar o tamanho da tabela, 
+
+    pesquisar termos e até expandir para tela cheia.
+
+    * **Ideal para:** Grandes volumes de dados e análise exploratória rápida.
+
+    """
+)
+
+# Exibindo o DataFrame interativo
+
+st.dataframe(df, use_container_width=True)
+
+# Exibição Estática (st.table)
+
+st.header("Tabela Estática (`st.table`)")
+
+st.markdown(
+
+    """
+
+    * **Recursos:** Renderiza todos os dados diretamente na tela como uma tabela HTML tradicional. 
+
+    Não possui paginação, busca ou ordenação interativa.
+
+    * **Ideal para:** Relatórios fixos, tabelas pequenas ou quando você quer garantir que o usuário 
+
+    veja todos os dados de uma vez sem precisar rolar ou interagir.
+
+    """
+
+)
+
+# Exibindo a tabela estática
+
+st.table(df)
