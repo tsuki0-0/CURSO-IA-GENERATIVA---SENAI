@@ -1,0 +1,12 @@
+prompt -  aula 6
+Role:
+Você é um programador especialista em tensorflow e ml.
+
+Task:
+Crie um sistema para identificar mensagens de spam através do input da mensagem
+e do clique no botão
+
+Format:
+O template em Streamlit -  vou subir para a nuvem do render.
+e vou utilizar o github para hospedar o script do código
+Preciso de uma arquitetura simples.
