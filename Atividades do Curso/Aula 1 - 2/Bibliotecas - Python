@@ -1,0 +1,20 @@
+# Streamlit - A Biblioteca Permite criar aplicativos Web interativos para ciência de dados e machine learning rapidamente
+pip install streamlit
+
+# Pandas - Biblioteca para Análise, Manipulação e Tratamento de dados
+pip install pandas
+
+# Numpy - Biblioteca para Computação científica e Análise de dados
+pip install numpy
+
+# TensorFlow - Machine Learning e Deep Learning
+pip install tensorflow
+
+# Setuptools e Wheel - Empacotar, Construir e Distribuir Bibliotecas Python
+pip install -U pip setuptools wheel
+
+# Spacy
+pip install -U spacy
+
+# pipeline em inglês otimizado para CPU
+python -m spacy download en_core_web_sm
